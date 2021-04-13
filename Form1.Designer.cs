@@ -62,7 +62,7 @@ namespace AutoJindan
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AutoJindan.Properties.Resources.logo_gsm;
-            this.pictureBox1.Location = new System.Drawing.Point(56, 41);
+            this.pictureBox1.Location = new System.Drawing.Point(54, 29);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(154, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -74,6 +74,7 @@ namespace AutoJindan
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(265, 301);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonUser);
