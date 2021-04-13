@@ -50,12 +50,20 @@ except FileNotFoundError as err:
     print('[ERROR] user.txt 파일을 찾을 수 없습니다.')
     quit()
 
-print('\n확인된 계정정보:')
-NAME = file.readline()[-4:].strip()
+
+print('\n입력된 계정정보:')
+
+SIDO = file.readline().strip()
+print(f'시/도: [{SIDO}]')
+LEVEL = file.readline().strip()
+print(f'학교급: [{LEVEL}]')
+SCHOOL_NAME = file.readline().strip()
+print(f'학교명: [{SCHOOL_NAME}]')
+NAME = file.readline().strip()
 print(f'이름: [{NAME}]')
-DAY_OF_BIRTH = file.readline()[-7:].strip()
+DAY_OF_BIRTH = file.readline().strip()
 print(f'생년월일: [{DAY_OF_BIRTH}]')
-PASSWORD = file.readline()[-4:].strip()
+PASSWORD = file.readline().strip()
 print(f'비밀번호: [{PASSWORD}]\n')
 
 # NAME = '양태웅'
@@ -79,13 +87,13 @@ driver.find_element_by_class_name('searchBtn').click()
 
 # 3. 학교 검색
 # 3-1. 시/도 선택
-Select(driver.find_element_by_id('sidolabel')).select_by_visible_text('광주광역시')
+Select(driver.find_element_by_id('sidolabel')).select_by_visible_text(SIDO)
 
 # 3-2. 학교급 선택
-Select(driver.find_element_by_id('crseScCode')).select_by_visible_text('고등학교')
+Select(driver.find_element_by_id('crseScCode')).select_by_visible_text(LEVEL)
 
 # 3-3. 학교명 입력
-driver.find_element_by_id('orgname').send_keys('광주소프트웨어마이스터고등학교')
+driver.find_element_by_id('orgname').send_keys(SCHOOL_NAME)
 
 # 3-4. 학교 검색
 driver.find_element_by_class_name('searchBtn').click()
@@ -115,6 +123,8 @@ driver.find_element_by_class_name('input_text_common').send_keys(PASSWORD)
 wait.until(EC.presence_of_element_located((By.ID, 'btnConfirm')))
 wait.until(EC.element_to_be_clickable((By.ID, 'btnConfirm')))
 driver.find_element_by_xpath('//*[@id="btnConfirm"]').click()
+sleep(3)
+
 print('로그인 완료\n')
 #endregion
 
@@ -123,8 +133,6 @@ print('로그인 완료\n')
 #region 자가진단
 
 # 학생 리스트 가져오기
-sleep(3)
-
 items = driver.find_element_by_xpath('//*[@id="container"]/div/section[2]/div[2]/ul').find_elements_by_tag_name('li')
 print(f'확인된 총 학생 수 : {len(items)}명')
 
@@ -148,13 +156,13 @@ while True:
     print(f'{name}학생의 자가진단을 시작합니다.')
 
     # 조사 응답
+    wait.until(EC.element_to_be_clickable((By.ID, 'survey_q1a1')))
     driver.find_element_by_xpath('//*[@id="survey_q1a1"]').click()
     driver.find_element_by_xpath('//*[@id="survey_q2a1"]').click()
     driver.find_element_by_xpath('//*[@id="survey_q3a1"]').click()
 
     # 응답 제출
     driver.find_element_by_id('btnConfirm').click()
-
     print(f'{name} 제출 완료')
 
     # 처음으로 버튼 클릭
@@ -167,7 +175,7 @@ while True:
 
 
 # 브라우저 닫기
-print('프로그램을 종료합니다.')
 driver.close()
-sleep(1)
-quit()
+# print('프로그램을 종료합니다.')
+# sleep(1)
+# quit()
