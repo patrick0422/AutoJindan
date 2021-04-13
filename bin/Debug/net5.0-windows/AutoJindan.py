@@ -52,7 +52,6 @@ except FileNotFoundError as err:
 
 
 print('\n입력된 계정정보:')
-
 SIDO = file.readline().strip()
 print(f'시/도: [{SIDO}]')
 LEVEL = file.readline().strip()
@@ -65,6 +64,8 @@ DAY_OF_BIRTH = file.readline().strip()
 print(f'생년월일: [{DAY_OF_BIRTH}]')
 PASSWORD = file.readline().strip()
 print(f'비밀번호: [{PASSWORD}]\n')
+
+file.close()
 
 # NAME = '양태웅'
 # DAY_OF_BIRTH = '040422'
