@@ -25,7 +25,7 @@ URL = 'https://hcs.eduro.go.kr/#/loginHome'
 
 options = webdriver.ChromeOptions()
 # 헤드리스 모드로 동작
-options.add_argument("headless")
+# options.add_argument("headless")
 # 불필요한 로그 비활성화
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 

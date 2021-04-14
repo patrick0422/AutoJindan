@@ -1,21 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IlCU3XJ998ouUwubsiUfOl+PVTc+gKU2d5TwOgSQydhp4q4aZC1LVpE3MkscEn95uttv9L88K5x1TWAwaoa21g==",
+  "dgSpecHash": "yFu1qUW7zEekum0C9V5XQGGYph06xAEdO3spwSXQ9Bnh3JmD9/4+AXskd/fbJiQIJVggRuirUzQcDrwbT0Ylaw==",
   "success": true,
-  "projectFilePath": "D:\\Coding\\AutoJindan\\AutoJindan\\AutoJindan.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\user\\.nuget\\packages\\dynamiclanguageruntime\\1.2.2\\dynamiclanguageruntime.1.2.2.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\ironpython\\2.7.9\\ironpython.2.7.9.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.codedom\\4.5.0\\system.codedom.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.configuration.configurationmanager\\4.5.0\\system.configuration.configurationmanager.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.security.principal.windows\\4.5.0\\system.security.principal.windows.4.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\system.text.encoding.codepages\\4.5.0\\system.text.encoding.codepages.4.5.0.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Coding\\AutoJindan\\AutoJindan.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

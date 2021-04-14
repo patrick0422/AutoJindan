@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using IronPython.Hosting;
 
 namespace AutoJindan
 {
@@ -26,18 +26,7 @@ namespace AutoJindan
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
-            var engine = Python.CreateEngine();
-            var scope = engine.CreateScope();
-
-            try
-            {
-                var source = engine.CreateScriptSourceFromFile(@"AutoJindan.py");
-                source.Execute(scope);
-            }
-            catch (Exception err)
-            {
-                Console.WriteLine(err.Message);
-            }
+            Process.Start("Jindan.exe");
         }
 
         private void button2_User(object sender, EventArgs e)
