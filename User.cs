@@ -21,13 +21,21 @@ namespace AutoJindan
         private void User_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            
             LoadData();
         }
         private void LoadData()
         {
             try
             {
+                if (!File.Exists("user.txt"))
+                {
+                    CreateFile();
+                    return;
+                }
+
                 string[] datas = System.IO.File.ReadAllLines("user.txt");
+
                 schoolSido.SelectedItem = datas[0].Trim();
                 schoolLevel.SelectedItem = datas[1].Trim();
                 schoolName.Text = datas[2].Trim();
@@ -36,11 +44,14 @@ namespace AutoJindan
                 studentDayOfBirth.Text = datas[4].Trim();
                 studentPassword.Text = datas[5].Trim();
             }
-            catch (System.IO.FileNotFoundException)
+            catch (Exception e)
             {
-                MessageBox.Show("user.txt 파일을 찾을 수 없습니다.", "파일을 찾을 수 없음", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Close();
+                Console.WriteLine(e.StackTrace); 
             }
+        }
+        private void CreateFile()
+        {
+                File.Create("user.txt");
         }
 
         private void buttonSave_Click(object sender, EventArgs e)
