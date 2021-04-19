@@ -31,6 +31,13 @@ namespace AutoJindan
 
         private void buttonStart_Click(object sender, EventArgs e)
         {
+            if (!File.Exists("user.txt"))
+            {
+                MessageBox.Show("먼저 정보를 설정해 주세요.");
+
+                return;
+            }
+
             Process.Start("Jindan.exe");
         }
 

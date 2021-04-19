@@ -55,7 +55,7 @@ namespace AutoJindan
             this.buttonUser.Name = "buttonUser";
             this.buttonUser.Size = new System.Drawing.Size(241, 44);
             this.buttonUser.TabIndex = 2;
-            this.buttonUser.Text = "계정 설정";
+            this.buttonUser.Text = "정보 설정";
             this.buttonUser.UseVisualStyleBackColor = true;
             this.buttonUser.Click += new System.EventHandler(this.button2_User);
             // 
