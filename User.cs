@@ -30,37 +30,49 @@ namespace AutoJindan
             {
                 if (!File.Exists("user.txt"))
                 {
-                    CreateFile();
+                    using (File.CreateText("user.txt"))
+                    {
+                        SaveData();
+                    }
+                        Close();
+
                     return;
                 }
 
-                string[] datas = System.IO.File.ReadAllLines("user.txt");
+                string[] datas = File.ReadAllLines("user.txt");
 
-                schoolSido.SelectedItem = datas[0].Trim();
-                schoolLevel.SelectedItem = datas[1].Trim();
+                if (datas.Length == 0)
+                    return;
+
+                schoolSido.Text = datas[0].Trim();
+                schoolLevel.Text = datas[1].Trim();
                 schoolName.Text = datas[2].Trim();
 
                 studentName.Text = datas[3].Trim();
                 studentDayOfBirth.Text = datas[4].Trim();
                 studentPassword.Text = datas[5].Trim();
+
+                
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.StackTrace); 
+                MessageBox.Show(e.StackTrace);
+                Close();
             }
         }
-        private void CreateFile()
-        {
-                File.Create("user.txt");
-        }
+        
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            //TODO
+            SaveData();
+            Close();
+        }
+        private void SaveData()
+        {
             string data = "";
 
-            data += schoolSido.SelectedItem.ToString() + "\n";
-            data += schoolLevel.SelectedItem.ToString() + "\n";
+            data += schoolSido.Text.ToString() + "\n";
+            data += schoolLevel.Text.ToString() + "\n";
             data += schoolName.Text + "\n";
 
             data += studentName.Text + "\n";
@@ -71,8 +83,6 @@ namespace AutoJindan
             {
                 outputFile.WriteLine(data);
             }
-
-            Close();
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
