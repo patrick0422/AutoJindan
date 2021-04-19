@@ -21,7 +21,8 @@ namespace AutoJindan
         private void User_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            
+
+            schoolSido.Focus();
             LoadData();
         }
         private void LoadData()

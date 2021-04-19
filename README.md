@@ -4,5 +4,3 @@
 다운로드: Release 폴더 다운로드
 
 https://www.youtube.com/watch?v=Qn6hMwKfSVY
-
-TODO: TabIndex 변경

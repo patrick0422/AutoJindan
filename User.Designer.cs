@@ -89,7 +89,7 @@ namespace AutoJindan
             this.schoolLevel.Location = new System.Drawing.Point(6, 127);
             this.schoolLevel.Name = "schoolLevel";
             this.schoolLevel.Size = new System.Drawing.Size(202, 33);
-            this.schoolLevel.TabIndex = 0;
+            this.schoolLevel.TabIndex = 1;
             // 
             // label1
             // 
@@ -141,7 +141,7 @@ namespace AutoJindan
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(214, 250);
-            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "학교 정보";
             // 
@@ -181,7 +181,7 @@ namespace AutoJindan
             this.studentName.Location = new System.Drawing.Point(6, 60);
             this.studentName.Name = "studentName";
             this.studentName.Size = new System.Drawing.Size(202, 34);
-            this.studentName.TabIndex = 2;
+            this.studentName.TabIndex = 0;
             // 
             // studentDayOfBirth
             // 
@@ -190,7 +190,7 @@ namespace AutoJindan
             this.studentDayOfBirth.MaxLength = 6;
             this.studentDayOfBirth.Name = "studentDayOfBirth";
             this.studentDayOfBirth.Size = new System.Drawing.Size(202, 34);
-            this.studentDayOfBirth.TabIndex = 2;
+            this.studentDayOfBirth.TabIndex = 1;
             // 
             // studentPassword
             // 
@@ -214,7 +214,7 @@ namespace AutoJindan
             this.groupBox2.Location = new System.Drawing.Point(232, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(214, 250);
-            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "학생 정보";
             // 
@@ -224,7 +224,7 @@ namespace AutoJindan
             this.buttonSave.Location = new System.Drawing.Point(256, 272);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(92, 33);
-            this.buttonSave.TabIndex = 4;
+            this.buttonSave.TabIndex = 2;
             this.buttonSave.Text = "저장";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
@@ -235,7 +235,7 @@ namespace AutoJindan
             this.buttonCancel.Location = new System.Drawing.Point(354, 272);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(92, 33);
-            this.buttonCancel.TabIndex = 4;
+            this.buttonCancel.TabIndex = 3;
             this.buttonCancel.Text = "취소";
             this.buttonCancel.UseVisualStyleBackColor = true;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
