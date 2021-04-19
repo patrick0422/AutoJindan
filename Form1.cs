@@ -15,9 +15,13 @@ namespace AutoJindan
 {
     public partial class Form1 : Form
     {
+        public const string VERSION = "1.0";
+
         public Form1()
         {
             InitializeComponent();
+
+            Text = "난 건강해 v." + VERSION;
         }
 
         private void Form1_Load(object sender, EventArgs e)

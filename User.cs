@@ -57,8 +57,7 @@ namespace AutoJindan
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.StackTrace);
-                Close();
+                
             }
         }
         

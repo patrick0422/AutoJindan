@@ -44,4 +44,3 @@ D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.dll
 D:\Coding\AutoJindan\obj\Debug\net5.0-windows\ref\AutoJindan.dll
 D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.pdb
 D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.genruntimeconfig.cache
-D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.csprojAssemblyReference.cache
