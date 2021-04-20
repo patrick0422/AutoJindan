@@ -5,4 +5,4 @@
 
 https://www.youtube.com/watch?v=Qn6hMwKfSVY
 
-나도 해줘 => 디스코드 양태웅#0074
+나도 해줘 → 디스코드 양태웅#0074
