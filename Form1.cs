@@ -15,7 +15,7 @@ namespace AutoJindan
 {
     public partial class Form1 : Form
     {
-        public const string VERSION = "1.0";
+        public const string VERSION = "1.1";
 
         public Form1()
         {

@@ -32,6 +32,7 @@ D:\Coding\AutoJindan\bin\Debug\net5.0-windows\AutoJindan.runtimeconfig.dev.json
 D:\Coding\AutoJindan\bin\Debug\net5.0-windows\AutoJindan.dll
 D:\Coding\AutoJindan\bin\Debug\net5.0-windows\ref\AutoJindan.dll
 D:\Coding\AutoJindan\bin\Debug\net5.0-windows\AutoJindan.pdb
+D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.csprojAssemblyReference.cache
 D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.Form1.resources
 D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.Properties.Resources.resources
 D:\Coding\AutoJindan\obj\Debug\net5.0-windows\AutoJindan.User.resources
