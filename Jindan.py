@@ -108,8 +108,15 @@ driver.find_element_by_id('btnConfirm').click()
 
 # 5. 비밀번호 선택
 sleep(1)
-wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'input_text_common')))
-driver.find_element_by_class_name('input_text_common').send_keys(PASSWORD)
+
+# 입력창 선택
+driver.find_element_by_xpath('//*[@id="password"]').click()
+
+# 비밀번호 입력
+for i in PASSWORD:
+    driver.execute_script("arguments[0].click();", driver.find_element_by_xpath(f"//*[@aria-label='{i}']"))
+
+    
 
 # 제출
 wait.until(EC.presence_of_element_located((By.ID, 'btnConfirm')))
