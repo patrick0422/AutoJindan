@@ -6,9 +6,9 @@ import selenium
 import sys
 
 from selenium import webdriver
-from selenium.webdriver import ActionChains
 
-from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
+
 from selenium.webdriver.common.by import By
 
 from selenium.webdriver.support import expected_conditions as EC
@@ -31,7 +31,7 @@ options.add_argument("headless")
 options.add_experimental_option("excludeSwitches", ["enable-logging"])
 
 try:
-    driver = webdriver.Chrome(executable_path='chromedriver', options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
 except selenium.common.exceptions.WebDriverException as err:
     print("[ERROR] chromedriver.exe를 찾을 수 없습니다.")
     quit()
