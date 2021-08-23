@@ -1,1 +1,4 @@
 user.txt
+__pycache__/
+
+build/
