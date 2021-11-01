@@ -1,0 +1,20 @@
+name: jindanCron
+on:
+  schedule:
+    - cron: "0 23 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: start jindan
+        run: python actionJindan.py
+        env:
+          SIDO: ${{ secrets.SIDO }}
+          SCHOOL_NAME: ${{ secrets.SCHOOL_NAME }}
+          LEVEL: ${{ secrets.LEVEL }}
+          DAY_OF_BIRTH: ${{ secrets.DAY_OF_BIRTH }}
+          NAME: ${{ secrets.NAME }}
+          PASSWORD: ${{ secrets.PASSWORD }}
